@@ -13,3 +13,7 @@ Deployment: Heroku
 ## Model Analysis 
 
 Used confusion matrix to evaluate the performance of the model.    
+
+## Link to the web application 
+
+[MusicMoodAnalyzer](https://musicmoodanalyzer.herokuapp.com/) 
