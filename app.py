@@ -4,7 +4,8 @@ from googletrans import Translator
 from watson_developer_cloud import ToneAnalyzerV3
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'f0039cc2d84aa1f4715d1e9e2a413d94'
+#Enter your secret key here for heroku deployment
+app.config['SECRET_KEY'] = '' 
 
 @app.route('/', methods = ['POST','GET'])
 def index():
@@ -12,7 +13,7 @@ def index():
 	form = SubmitSongForm()
 	tone_analyzer = ToneAnalyzerV3(
     version='2017-09-21',
-    iam_apikey='p43BO5UQF0QLzG7RUA8MWnIaOnY29gQ5QeSv-phZJWA3',
+    iam_apikey='', #Enter you api key here (IBM WATSON)
     url='https://gateway.watsonplatform.net/tone-analyzer/api')
 	# if form.validate_on_submit():
 	if request.method == 'POST':
